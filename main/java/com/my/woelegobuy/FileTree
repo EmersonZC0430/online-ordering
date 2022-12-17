@@ -1,0 +1,132 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.
+├── AndroidManifest.xml
+├── assets
+│   └── litepal.xml --数据库目录 不可动
+├── java
+│   └── com
+│       └── my
+│           └── woelegobuy
+│               ├── MyApplication.java --项目初始化
+│               ├── model
+│               │   ├── Goods.java  --商品类
+│               │   ├── OrderModel.java --订单类
+│               │   ├── ShoppingCart.java   --购物车类
+│               │   └── User.java   --用户类
+│               ├── ui
+│               │   ├── IndexActivity.java  --起始欢迎页
+│               │   ├── MainActivity.java   --项目根页面
+│               │   ├── ViewPagerAdapter.java   --根页面Adapter
+│               │   ├── admin
+│               │   │   ├── AddGoodsActivity.java   --添加商品页
+│               │   │   ├── AdminActivity.java  --管理员首页
+│               │   │   ├── GoodsManagementActivity.java    --商品管理页面
+│               │   │   ├── OrderActivity.java  --所有订单页面
+│               │   │   └── UserActivity.java   --用户管理页面
+│               │   ├── home
+│               │   │   ├── GoodsDescActivity.java  --商品详情页面
+│               │   │   ├── HomeFragment.java   --首页
+│               │   │   └── SearchActivity.java --搜索商品页面
+│               │   ├── login
+│               │   │   ├── LoginActivity.java  --登录页面
+│               │   │   └── RegisterActivity.java   --注册页面
+│               │   ├── my
+│               │   │   ├── MyFragment.java --我的页面
+│               │   │   └── OrderHistoryActivity.java   --我的历史订单页面
+│               │   └── shoppingCart
+│               │       ├── OrderSettlementActivity.java    --购物车页面
+│               │       └── ShoppingCartFragment.java   --结算页面
+│               └── utils
+│                   ├── BaseRecyclerAdapter.java    --recycle工具
+│                   ├── BaseRecyclerHolder.java     --recycle工具
+│                   ├── IDUtils.java    --id工具
+│                   ├── KVUtils.java    --存储工具
+│                   ├── MessageEvent.java   --发送消息工具
+│                   ├── SnowFlakeShortUrl.java  --Id工具
+│                   ├── SquareRelativeLayout.java   --自定义View
+│                   └── TimeUtils.java  --时间工具
+└── res
+    ├── layout
+    │   ├── activity_add_goods.xml  --添加商品布局
+    │   ├── activity_admin.xml  --管理首页布局
+    │   ├── activity_goods_desc.xml --商品详细信息布局
+    │   ├── activity_goods_management.xml   --商品管理布局
+    │   ├── activity_index.xml  --起始页布局
+    │   ├── activity_login.xml  --登录页布局
+    │   ├── activity_main.xml   --主页布局
+    │   ├── activity_order.xml  --订单页面布局
+    │   ├── activity_order_history.xml  --订单历史布局
+    │   ├── activity_order_settlement.xml   --管理员所有订单布局
+    │   ├── activity_register.xml   --注册布局
+    │   ├── activity_search.xml --搜索布局
+    │   ├── activity_user.xml   --管理员用户管理布局
+    │   ├── fragment_home.xml   --主页布局
+    │   ├── fragment_my.xml --我的布局
+    │   ├── fragment_shopping_cart.xml  --购物车布局
+    │   ├── item_add_goods_image.xml    --添加商品中图片item的布局
+    │   ├── item_goods.xml  --商品item布局
+    │   ├── item_order.xml  --订单item布局
+    │   ├── item_new_order.xml  --用户订单item布局
+    │   ├── item_new2_order.xml  --管理订单item布局
+    │   ├── item_user.xml   --管理员用户管理item布局
+    │   └── top_bar.xml --top bar
+    └──
+/**
+ * (1)注册功能:该功能点就是用户常见的信息注册，规定了用户注册的方式、密码的长短。
+ * 在本平台中用户注册采用虚拟的手机号码，当用户输入手机号码后，可以直接设置密码进行注册。
+ * (2) 登录功能:该功能点是用户填写的用户手机号码以及密码
+ * (3)商品浏览功能:用户通过点击商品的展示图跳转到产品详情中，就可以查看每个商品的信息。
+ * (4)商品搜索功能:买家用户可以通过搜索栏对于所需商品进行搜索，并显示出所搜索商品。
+ * (5)购物车功能:用户可以添加所需商品到购物车，在可以选择的栏框里进行加减选择，点击购物车中的清空按钮便可以清空购物车。
+ * (6)支付功能:当用户对于所需商品进行购买时，可以点击结算按钮，
+ * 会跳转到订单结算界面，显示购买金额。点击付款按钮显示支付成功，点击取消支付自动返回购物车。
+ *
+ * 管理端，对用户的信息进行查询和更新，对商品信息的管理、订单信息的存取及处理。主要分为以下三个功能:
+ * (1)用户管理功能:管理员进入操作后，填写相应信息后，便可查询用户的登录详情。
+ * 通过此方式加强对平台用户的管理，增加平台的安全性.
+ * (2)商品管理功能:管理员通过登录系统，对商品的信息进行管理。
+ * 如增加新的商品种类，删除下架商品，给商品添加详情介绍；增加或者删除平台里某些商品的图片等。
+ * (3)订单管理功能:管理员可以查询该订单的相关信息。
+    管理员账号: 77889900
+    管理员密码: admin123
+ */

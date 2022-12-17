@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_background"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/margin"
+    android:paddingEnd="@dimen/margin"
+
+    tools:context=".ui.login.RegisterActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:src="@mipmap/register" />
+
+    <EditText
+        android:id="@+id/account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:hint="手机号"
+        android:maxLength="11"
+        android:inputType="number"
+        android:textColor="@color/background"
+        android:theme="@style/MyEditText"
+        android:textColorHint="@color/background_hint"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:theme="@style/MyEditText"
+        android:textColor="@color/background"
+        android:textColorHint="@color/background_hint"
+        android:textSize="18sp" />
+    <EditText
+        android:id="@+id/confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="确认密码"
+        android:inputType="textPassword"
+        android:theme="@style/MyEditText"
+        android:textColor="@color/background"
+        android:textColorHint="@color/background_hint"
+        android:textSize="18sp" />
+    <EditText
+        android:id="@+id/usersite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="地址"
+
+        android:theme="@style/MyEditText"
+        android:textColor="@color/background"
+        android:textColorHint="@color/background_hint"
+        android:textSize="18sp" />
+
+
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/login_button"
+        android:text="注册"
+        android:textColor="@color/background"
+        android:textSize="20sp" />
+</LinearLayout>

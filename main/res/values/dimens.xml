@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="sm_size">25dp</dimen>
+
+    <dimen name="margin">20dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="design_fab_size_normal" >80dp</dimen>
+</resources>

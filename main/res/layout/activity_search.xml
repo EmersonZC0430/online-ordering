@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".ui.home.SearchActivity">
+
+    <include layout="@layout/top_bar" />
+
+    <androidx.cardview.widget.CardView
+        style="@style/card_style"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editTex"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="请输入要搜索的商品" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_10" />
+
+</LinearLayout>

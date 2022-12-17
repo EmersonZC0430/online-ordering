@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="demo" ></dbname>
+    <version value="7" ></version>
+    <list>
+        <mapping class="com.my.woelegobuy.model.Goods" />
+        <mapping class="com.my.woelegobuy.model.OrderModel" />
+        <mapping class="com.my.woelegobuy.model.ShoppingCart" />
+        <mapping class="com.my.woelegobuy.model.User" />
+    </list>
+</litepal>
